@@ -177,7 +177,7 @@
 #Clints_Section::before {
     content: "";
     position: absolute;
-    background: url('/Img/Client_BG.jpg') no-repeat center center/cover;
+    background: url('../Img/Client_BG.jpg') no-repeat center center/cover;
     width: 100%;
     height: 57%;
     z-index: -1;
@@ -208,7 +208,7 @@
 #contact-us::before {
     content: "";
     position: absolute;
-    background: url('/Img/Contact_Us.jpg')no-repeat center center/cover;
+    background: url('../Img/Contact_Us.jpg')no-repeat center center/cover;
     width: 100%;
     height: 100%;
     z-index: -1;
