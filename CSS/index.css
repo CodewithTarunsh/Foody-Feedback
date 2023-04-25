@@ -1,0 +1,301 @@
+/* CSS Rest */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Varibale */
+:root {
+    --navbar-height: 60px;
+}
+
+/* Navbar CSS */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+
+/* Navbar: Logo and Image CSS */
+
+.logo {
+    margin: 30px 34px
+}
+
+.logo img {
+    height: 80px;
+    width: 200px;
+}
+
+/* Navbar: List Item CSS */
+
+
+#navbar ul {
+    display: flex;
+    justify-content: right;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position:absolute;
+    /* margin-top: 0%; */
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px;
+    margin: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a:hover {
+    color: red;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 5px 200px;
+    justify-content: center;
+    align-items: center; 
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(../Img/Img1.jpg) no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+#home h1 {
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#home p {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 8px 5px;
+    height: 45px;
+    width: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: red;
+    background-color: white;
+    border: 3px solid red;
+
+}
+
+/* Services Section */
+
+#services_container {
+     /* display: flex; */
+}
+
+#Services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Services .box {
+    /* border: 2px solid red; */
+
+    padding: 10px 10px;
+    margin: 10px 25px;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Services .box p
+{
+    text-align: center;
+}
+
+#Services .box img {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Clints Section */
+
+#Clints_Section {
+    height: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#Clints_Section::before {
+    content: "";
+    position: absolute;
+    background: url('/Img/Client_BG.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 57%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+
+#clints {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clints-item {
+    margin: 20px;
+}
+
+.clints-item img {
+    height: 220px;
+    width: 220px;
+}
+
+/* Contact us Section */
+
+#contact-us {}
+
+#contact-us::before {
+    content: "";
+    position: absolute;
+    background: url('/Img/Contact_Us.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: large;
+    border-radius: 6px;
+    border-color: white;
+
+}
+
+.form-group label:hover {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    opacity: 0.4;
+}
+
+.form-group label {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 6px 5px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 17px;
+
+}
+
+/* About Section */
+
+#about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:antiquewhite;
+}
+
+#about .p
+{
+    margin: 7px 20px;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: antiquewhite; */
+}
+
+.about-us
+{
+    margin-bottom: 20px;
+}
+
+/* Utlity Class */
+.h_primary {
+    font-size: 3rem;
+    padding: 12px;
+    justify-content: left;
+    text-align: center;
+
+}
+
+.h_secondary {
+    font-size: 2rem;
+    padding: 12px;
+    justify-content: left;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}

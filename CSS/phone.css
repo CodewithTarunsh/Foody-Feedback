@@ -1,0 +1,131 @@
+/* Navbar Section */
+#navbar
+{
+ flex-direction: column;
+
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+
+/* Navbar: Logo and Image CSS */
+
+.logo {
+    margin: 5px 10px
+}
+
+.logo img {
+    height: 60px;
+    width: 130px;
+}
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+#home:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(../Img/Img1.jpg) no-repeat center center/cover;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+
+#home p {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.btn
+{
+    margin: 5px 6px;
+    padding: 3px 4px;
+}
+
+/* Serviecse */
+
+#Services
+{
+ flex-direction: column;
+ overflow: hidden;
+}
+
+#Services .box
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+#Services .box p{
+   flex-wrap: wrap;
+}
+
+/* Our Clients Section */
+
+#clints
+{
+    flex-wrap: wrap;
+
+}
+
+.clints-item img {
+    height: 100px;
+    width: 100px;
+}
+
+.clints-item
+{
+    margin: 10px;
+}
+
+/* About us Section */
+
+/* Contact us Section */
+
+
+/* Utlity Class */
+.h_primary {
+    font-size: 1.8rem;
+    padding: 4px;
+    justify-content: left;
+    text-align: center;
+
+}
+
+.h_secondary {
+    font-size: 1.5rem;
+    padding: 4px;
+    justify-content: left;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
