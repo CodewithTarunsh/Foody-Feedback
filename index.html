@@ -7,10 +7,37 @@
     <title>Foody Feedback</title>
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" media="screen and (max-width: 1270px)" href="./CSS/phone.css">
+    <link rel="stylesheet" href="mobileJS.js">
+
+    <script>function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+        function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+      }</script>
 </head>
 <body>
 
     <nav id="navbar">
+
+
         <div class="logo">
             <img src="./Img/Logo1.png" alt="Image is Loading">
         </div>
@@ -21,18 +48,24 @@
             <li class="item" ><a href="#Clints_Section">Our Clients</a></li>
             <li class="item" ><a href="#about">About Us</a></li>
             <li class="item" ><a href="#contact-us">Contact Us</a></li>
-            <!-- <li class="item"  ><a href="#" >Sign Up/Log In</a></li>
-            <li class="item" ><a href="#">Write a Review</a></li> -->
+            <li class="item"  ><a href="#" >Previews Reviews</a></li>
+            <li class="item" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSet5pcjzePFnAV1JzZUZT8m81y-p037JaajqScf1KUStXGRYQ/viewform">Write a Review</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+
     </nav>
 
     <section id="home">
         <h1 class="h_primary">Welcome to Foody Feedback write reviews about their favorite restaurants. </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque quos tenetur ab veniam vero aliquam reprehenderit ducimus sed nobis eligendi iusto accusantium eveniet exercitationem voluptatum, voluptatem repellendus placeat libero?
-        </p>
+        <p>Foody Feedback is a cutting-edge web application that revolutionizes the way food enthusiasts share their dining experiences. This platform serves as a virtual haven for users to passionately express their thoughts and opinions about their favorite restaurants, hotels, and bars<span id="dots">...</span> <span id="more">By providing a user-friendly interface, Foody Feedback enables individuals to write detailed and genuine reviews, thereby fostering a vibrant community of food lovers. Whether it's a cozy neighborhood cafe, a luxurious five-star hotel, or a trendy cocktail bar, users can vividly narrate their gastronomic adventures, rate the quality of service, ambiance, and dishes, and even upload tantalizing snapshots of their culinary delights. With its comprehensive database of eateries and an engaging social aspect, .
+        </span></p>
+        <button onclick="myFunction()" class="hide1" id="myBtn">Read more</button>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nihil ea facilis quod eveniet quo inventore, perferendis odit delectus libero.</p>
-        <button class="btn"> Review Now</button>
+        <p>Foody Feedback has emerged as the go-to hub for those seeking reliable recommendations and insights to enhance their dining experiences</p>
+        <button class="btn1"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSet5pcjzePFnAV1JzZUZT8m81y-p037JaajqScf1KUStXGRYQ/viewform" >Review Now</a
+          ></button>
     </section>
 
     <section id="services_container">

@@ -51,7 +51,6 @@
 
 }
 
-
 #home p {
     color: white;
     align-items: center;
@@ -129,3 +128,103 @@
 .center {
     text-align: center;
 }
+
+@media (max-width:1324px) and (min-width:800px)
+        {
+            #navbar .logo
+            {
+               
+            
+            align-items: center;
+            align-content: center;
+    
+            }
+        }
+
+        @media   (max-width:800px) and (min-width:600px)
+        {
+            #navbar
+            {
+            
+                font-size: 6px;
+                align-items: center;
+                align-content: center;
+            
+               
+            }
+        }
+
+        @media   (max-width:600px) and (min-width:400px)
+        {
+            #navbar
+            {
+                
+                font-size: 4px;
+                align-items: center;
+                align-content: center;
+                
+            }
+
+            #navbar {
+                overflow: hidden;
+                position: relative;
+              }
+
+              #navbar ul li {
+                display: none;
+              }
+
+              #navbar ul li a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+              }
+
+              #navbar u li a.icon {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              
+        }
+
+        @media   (max-width:400px) and (min-width:0px)
+        {
+            #navbar
+            {
+               font-size: 3px;
+               align-items: center;
+                align-content: center;
+                                       }
+
+            #navbar {
+                overflow: hidden;
+               
+                position: relative;
+              }
+              #navbar ul li {
+                display: none;
+              }
+
+              #navbar ul li  a {
+                color: white;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;
+              }
+
+              #navbar u li a.icon {
+                background: black;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              
+        }
+
