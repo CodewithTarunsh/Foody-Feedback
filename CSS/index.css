@@ -354,13 +354,21 @@ footer {
 @media screen and (min-width: 426px) {
     .hide1{
         display: none;
+        font-size: 6px;
         
     }
+
+    .h_primary
+    {
+        font-size: 4px;
+    }
+   .h_primary p 
+   {
+    font-size: 2px;
+   }
     
   }
-  @media screen and  {
-    
-  }
+ 
 
   
  
