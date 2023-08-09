@@ -152,9 +152,14 @@
             
                
             }
+            .h_primary
+              {
+                font-size: 14px;
+              }
+
         }
 
-        @media   (max-width:600px) and (min-width:400px)
+        @media   (max-width:600px) and (min-width:300px)
         {
             #navbar
             {
@@ -165,34 +170,32 @@
                 
             }
 
-            #navbar {
-                overflow: hidden;
-                position: relative;
-              }
-
-              #navbar ul li {
-                display: none;
-              }
+            
 
               #navbar ul li a {
                 color: white;
-                padding: 14px 16px;
+                padding: 3px 4px;
                 text-decoration: none;
-                font-size: 17px;
+                font-size: 6px;
                 display: block;
               }
 
-              #navbar u li a.icon {
+              .h_primary
+              {
+                font-size: 15px;
+              }
+
+              /* #navbar u li a.icon {
                 background: black;
                 display: block;
                 position: absolute;
                 right: 0;
                 top: 0;
               }
-              
-        }
+               */
+        } */
 
-        @media   (max-width:400px) and (min-width:0px)
+        /* @media   (max-width:400px) and (min-width:0px)
         {
             #navbar
             {
@@ -227,4 +230,4 @@
               }
               
         }
-
+ */
